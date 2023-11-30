@@ -4,14 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d09c1011-6729-491d-9314-c548f1c8912d" name="Changes" comment="" />
+    <list default="true" id="d09c1011-6729-491d-9314-c548f1c8912d" name="Changes" comment="25/11/2023">
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/Android_MyDemoAppBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/ApiDemosBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/CalculatorBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/GeneralStoreBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day02/C02_Capabilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day02/C03_Locators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day03/C04_NativeElementleriTanimlama.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day03/C05_TemelEylemler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day03/C06_ElementDegerleriniCekme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day04_practice/P01_ApiDemos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day04_practice/P02_GeneralStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day05practice/P03_GeneralStore_NegativeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day05practice/P04_MyDemoApp_ColorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/homework/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/homework/Locators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Android-MyDemoAppRN.1.3.0.build-244.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/General-Store.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/techproed/day01/C01_SetupDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/techproed/day01/C01_SetupDriver.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -26,12 +56,119 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/EXCALIBUR/Desktop/GitProjectNT/B151_API&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\EXCALIBUR\Desktop\Appium_Upskils\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.P04_MyDemoApp_ColorTest.testColor">
+    <configuration name="Calculator.testToplama" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Appium_Upskils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="techproed.homework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="techproed.homework" />
+      <option name="MAIN_CLASS_NAME" value="techproed.homework.Calculator" />
+      <option name="METHOD_NAME" value="testToplama" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P02_GeneralStore.testGeneralStore" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Appium_Upskils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="techproed.day04_practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="techproed.day04_practice" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day04_practice.P02_GeneralStore" />
+      <option name="METHOD_NAME" value="testGeneralStore" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P03_GeneralStore_NegativeTest.testGeneralStoreNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Appium_Upskils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="techproed.day05practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="techproed.day05practice" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day05practice.P03_GeneralStore_NegativeTest" />
+      <option name="METHOD_NAME" value="testGeneralStoreNegativeTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P04_MyDemoApp_ColorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Appium_Upskils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="techproed.day05practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="techproed.day05practice" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day05practice.P04_MyDemoApp_ColorTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P04_MyDemoApp_ColorTest.testColor" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Appium_Upskils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="techproed.day05practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="techproed.day05practice" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day05practice.P04_MyDemoApp_ColorTest" />
+      <option name="METHOD_NAME" value="testColor" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.P04_MyDemoApp_ColorTest.testColor" />
+        <item itemvalue="TestNG.P04_MyDemoApp_ColorTest" />
+        <item itemvalue="TestNG.P03_GeneralStore_NegativeTest.testGeneralStoreNegativeTest" />
+        <item itemvalue="TestNG.P02_GeneralStore.testGeneralStore" />
+        <item itemvalue="TestNG.Calculator.testToplama" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,6 +178,18 @@
       <option name="presentableId" value="Default" />
       <updated>1700938639468</updated>
     </task>
+    <task id="LOCAL-00001" summary="25/11/2023">
+      <created>1700944989448</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700944989448</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="25/11/2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="25/11/2023" />
   </component>
 </project>
