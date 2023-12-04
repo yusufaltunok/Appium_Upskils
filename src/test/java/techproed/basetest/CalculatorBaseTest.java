@@ -4,28 +4,36 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import techproed.utilities.ReusableMethods;
 
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
-public class CalculatorBaseTest {
+public class CalculatorBaseTest extends ReusableMethods {
     public AndroidDriver driver;
 
     @BeforeClass
     public void setup() throws MalformedURLException {
+//        String appUrl = System.getProperty("user.dir")
+//                + File.separator + "src"
+//                + File.separator + "test"
+//                + File.separator + "resources"
+//                + File.separator + "Calculator.apk";
+//        UiAutomator2Options options = new UiAutomator2Options()
+//                .setApp(appUrl);
 
-        UiAutomator2Options options = new UiAutomator2Options()
-                .setUdid("52004ce95e622501")
-                .setAppPackage("com.sec.android.app.popupcalculator")
-                .setAppActivity("com.sec.android.app.popupcalculator.Calculator");
+            UiAutomator2Options options = new UiAutomator2Options()
+                    .setAppPackage("com.google.android.calculator")
+                    .setAppActivity("com.android.calculator2.Calculator");
 
         URL url = new URL("http://0.0.0.0:4723");
         driver = new AndroidDriver(url, options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
- // adb shell dumpsys window | find "mCurrentFocus" komutu ile hesap makinesini aç  com.android.calculator2/com.android.calculator2.Calculator
+    // adb shell dumpsys window | find "mCurrentFocus" komutu ile hesap makinesini aç  com.android.calculator2/com.android.calculator2.Calculator
+    //adb shell dumpsys window | grep -E "mCurrentFocus"j7y17lte:/ $ dumpsys window | grep -E "mCurrentFocus"
     @AfterClass
     public void afterClass() {
         driver.quit();

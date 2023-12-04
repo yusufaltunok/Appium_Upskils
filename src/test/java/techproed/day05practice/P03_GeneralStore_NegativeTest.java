@@ -6,6 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import techproed.basetest.GeneralStoreBaseTest;
 
+
+
+
 public class P03_GeneralStore_NegativeTest extends GeneralStoreBaseTest {
 
     /*
@@ -29,8 +32,5 @@ public class P03_GeneralStore_NegativeTest extends GeneralStoreBaseTest {
 
 
     }
-    // Reusable method
-//    public String getToastMessage(){
-//        return driver.findElement(AppiumBy.xpath("//android.widget.Toast")).getAttribute("name");
-//    }
+
 }

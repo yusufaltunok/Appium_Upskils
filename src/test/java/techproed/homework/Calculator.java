@@ -2,11 +2,14 @@ package techproed.homework;
 
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import techproed.basetest.CalculatorBaseTest;
 
 import java.util.Random;
 
+import static org.testng.Assert.assertTrue;
 import static org.testng.AssertJUnit.assertEquals;
 
 
@@ -21,40 +24,32 @@ public class Calculator extends CalculatorBaseTest {
     By sekiz = AppiumBy.accessibilityId("8");
     By dokuz = AppiumBy.accessibilityId("9");
     By sifir = AppiumBy.accessibilityId("0");
-    By arti = AppiumBy.accessibilityId("Artı");
-    By eksi = AppiumBy.accessibilityId("Eksi");
-    By carpi = AppiumBy.accessibilityId("Çarpma");
-    By bolu = AppiumBy.accessibilityId("Bölme");
-    By sil = AppiumBy.accessibilityId("Temizle");
-    By esit = AppiumBy.accessibilityId("Eşit");
-    By arti_eksi = AppiumBy.accessibilityId("Artı/eksi");
+    By parantez = AppiumBy.accessibilityId("sol veya sağ parantez");
+    By arti = AppiumBy.accessibilityId("artı");
+    By eksi = AppiumBy.accessibilityId("eksi");
+    By carpi = AppiumBy.accessibilityId("çarpı");
+    By bolu = AppiumBy.accessibilityId("bölü");
+    By sil = AppiumBy.accessibilityId("temizle");
+    By esit = AppiumBy.accessibilityId("eşittir");
+    By sonuc = AppiumBy.id("com.google.android.calculator:id/result_final");
 
     int secim;
     int num1;
     int num2;
     int expectedResult = 0;
 
-    By sonuc = AppiumBy.androidUIAutomator("new UiSelector().description(\""+expectedResult+"\" Hesaplama sonucu\")");
-    By sonuc1 = AppiumBy.androidUIAutomator("new UiSelector().description(\"−3 Hesaplama sonucu\")");
-    By sonuc2 = AppiumBy.androidUIAutomator("new UiSelector().description(\"−10 Hesaplama sonucu\")");
 
     @Test
     public void testToplama() throws InterruptedException {
 
         // İki pozitif sayının toplamı
-//        driver.findElement(bir).click();
-//        driver.findElement(arti).click();
-//        driver.findElement(iki).click();
-//        driver.findElement(esit).click();
-//        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
-//        driver.findElement(sil).click();
-
         randomSayi();
         num1 = secim;
         driver.findElement(arti).click();
         randomSayi();
         num2 = secim;
         driver.findElement(esit).click();
+        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
 
         //Dogrulama
         String result = driver.findElement(sonuc).getText();
@@ -64,136 +59,240 @@ public class Calculator extends CalculatorBaseTest {
         System.out.println("Gercek deger = " + actualResult
                 + "\nBeklenen deger = " + expectedResult);
 
-        driver.findElement(sil).click();
-/*
 
         // Bir pozitif bir negatif sayının toplamı
-        driver.findElement(bes).click();
+        randomSayi();
+        num1 = secim;
         driver.findElement(arti).click();
-        driver.findElement(arti_eksi).click();
-        driver.findElement(sekiz).click();
+        driver.findElement(parantez).click();
+        driver.findElement(eksi).click();
+        randomSayi();
+        driver.findElement(parantez).click();
+        num2 = secim;
         driver.findElement(esit).click();
-        System.out.println("sonuc1 = " + driver.findElement(sonuc1).getText());
-        driver.findElement(sil).click();
+        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
 
-        // İki negatif sayının toplamı
-        driver.findElement(arti_eksi).click();
-        driver.findElement(dort).click();
+        //Dogrulama
+        String result1 = driver.findElement(sonuc).getText();
+        expectedResult = num1 + -num2;
+        String expectedStr = String.valueOf(expectedResult);
+        assertEquals(expectedStr, result1);
+        System.out.println("Gercek deger = " + result1
+                + "\nBeklenen deger = " + expectedStr);
+
+
+//        // İki negatif sayının toplamı
+        driver.findElement(parantez).click();
+        driver.findElement(eksi).click();
+        randomSayi();
+        driver.findElement(parantez).click();
+        num1 = secim;
         driver.findElement(arti).click();
-        driver.findElement(arti_eksi).click();
-        driver.findElement(alti).click();
+        driver.findElement(parantez).click();
+        driver.findElement(eksi).click();
+        randomSayi();
+        driver.findElement(parantez).click();
+        num2 = secim;
         driver.findElement(esit).click();
-        System.out.println("sonuc2 = " + driver.findElement(sonuc2).getText());
-        driver.findElement(sil).click();
+        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
 
- */
+        //Dogrulama
+        String result2 = driver.findElement(sonuc).getText();
+        expectedResult = -num1 + -num2;
+        String expectedStrg = String.valueOf(expectedResult);
+        assertEquals(expectedStrg, result2);
+        System.out.println("Gercek deger = " + result2
+                + "\nBeklenen deger = " + expectedStrg);
+
+
     }
-
-    By cikarmaSonuc = AppiumBy.androidUIAutomator("new UiSelector().description(\"6 Hesaplama sonucu\")");
-    By cikarmaSonuc1 = AppiumBy.androidUIAutomator("new UiSelector().text(\"12\")");
-    By cikarmaSonuc2 = AppiumBy.androidUIAutomator("new UiSelector().description(\"4 Hesaplama sonucu\")");
 
     @Test
     public void testCikarma() {
 
         // İki pozitif sayıyı çıkarma
-        driver.findElement(sekiz).click();
+        randomSayi();
+        num1 = secim;
         driver.findElement(eksi).click();
-        driver.findElement(iki).click();
+        randomSayi();
+        num2 = secim;
         driver.findElement(esit).click();
-        System.out.println("cikarmaSonuc = " + driver.findElement(cikarmaSonuc).getText());
-        driver.findElement(sil).click();
+        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
+
+        //Dogrulama
+        String result = driver.findElement(sonuc).getText();
+        expectedResult = num1 - num2;
+        String expected = String.valueOf(expectedResult);
+        assertEquals(expected, result);
+        System.out.println("Gercek deger = " + result
+                + "\nBeklenen deger = " + expected);
+
 
         // Bir pozitif bir negatif sayıyı çıkarma
-        driver.findElement(dort).click();
+        randomSayi();
+        num1 = secim;
         driver.findElement(eksi).click();
-        driver.findElement(arti_eksi).click();
-        driver.findElement(sekiz).click();
+        driver.findElement(parantez).click();
+        driver.findElement(eksi).click();
+        randomSayi();
+        driver.findElement(parantez).click();
+        num2 = secim;
         driver.findElement(esit).click();
-        System.out.println("cikarmaSonuc1 = " + driver.findElement(cikarmaSonuc1).getText());
-        driver.findElement(sil).click();
+        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
+
+        //Dogrulama
+        String result1 = driver.findElement(sonuc).getText();
+        expectedResult = num1 - -num2;
+        String expectedStr = String.valueOf(expectedResult);
+        assertEquals(expectedStr, result1);
+        System.out.println("Gercek deger = " + result1
+                + "\nBeklenen deger = " + expectedStr);
 
         // İki negatif sayıyı çıkarma
-        driver.findElement(arti_eksi).click();
-        driver.findElement(uc).click();
+        driver.findElement(parantez).click();
         driver.findElement(eksi).click();
-        driver.findElement(arti_eksi).click();
-        driver.findElement(yedi).click();
+        randomSayi();
+        driver.findElement(parantez).click();
+        num1 = secim;
+        driver.findElement(eksi).click();
+        driver.findElement(parantez).click();
+        driver.findElement(eksi).click();
+        randomSayi();
+        driver.findElement(parantez).click();
+        num2 = secim;
         driver.findElement(esit).click();
-        System.out.println("cikarmaSonuc2 = " + driver.findElement(cikarmaSonuc2).getText());
-        driver.findElement(sil).click();
+        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
+
+        //Dogrulama
+        String result2 = driver.findElement(sonuc).getText();
+        expectedResult = -num1 - -num2;
+        String expectedStrg = String.valueOf(expectedResult);
+        assertEquals(expectedStrg, result2);
+        System.out.println("Gercek deger = " + result2
+                + "\nBeklenen deger = " + expectedStrg);
     }
 
-    By carpmaSonuc = AppiumBy.androidUIAutomator("new UiSelector().text(\"30\")");
-    By carpmaSonuc1 = AppiumBy.androidUIAutomator("new UiSelector().text(\"−56\")");
-    By carpmaSonuc2 = AppiumBy.androidUIAutomator("new UiSelector().text(\"52\")");
 
     @Test
     public void testCarpma() {
         // İki pozitif sayıyı carpma
-        driver.findElement(alti).click();
+        randomSayi();
+        num1 = secim;
         driver.findElement(carpi).click();
-        driver.findElement(bes).click();
+        randomSayi();
+        num2 = secim;
         driver.findElement(esit).click();
-        System.out.println("carpmaSonuc = " + driver.findElement(carpmaSonuc).getText());
-        driver.findElement(sil).click();
+        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
+
+        //Dogrulama
+        String result = driver.findElement(sonuc).getText();
+        expectedResult = num1 * num2;
+        String expected = String.valueOf(expectedResult);
+        assertEquals(expected, result);
+        System.out.println("Gercek deger = " + result
+                + "\nBeklenen deger = " + expected);
+
 
         // Bir pozitif bir negatif sayıyı carpma
-        driver.findElement(yedi).click();
+        randomSayi();
+        num1 = secim;
         driver.findElement(carpi).click();
-        driver.findElement(arti_eksi).click();
-        driver.findElement(sekiz).click();
+        driver.findElement(parantez).click();
+        driver.findElement(eksi).click();
+        randomSayi();
+        driver.findElement(parantez).click();
+        num2 = secim;
         driver.findElement(esit).click();
-        System.out.println("carpmaSonuc1 = " + driver.findElement(carpmaSonuc1).getText());
-        driver.findElement(sil).click();
+        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
+
+        //Dogrulama
+        String result1 = driver.findElement(sonuc).getText();
+        expectedResult = num1 * -num2;
+        String expectedStr = String.valueOf(expectedResult);
+        assertEquals(expectedStr, result1);
+        System.out.println("Gercek deger = " + result1
+                + "\nBeklenen deger = " + expectedStr);
+
 
         // İki negatif sayıyı carpma
-        driver.findElement(arti_eksi).click();
-        driver.findElement(bir).click();
-        driver.findElement(uc).click();
+        driver.findElement(parantez).click();
+        driver.findElement(eksi).click();
+        randomSayi();
+        driver.findElement(parantez).click();
+        num1 = secim;
         driver.findElement(carpi).click();
-        driver.findElement(arti_eksi).click();
-        driver.findElement(dort).click();
+        driver.findElement(parantez).click();
+        driver.findElement(eksi).click();
+        randomSayi();
+        driver.findElement(parantez).click();
+        num2 = secim;
         driver.findElement(esit).click();
-        System.out.println("carpmaSonuc2 = " + driver.findElement(carpmaSonuc2).getText());
-        driver.findElement(sil).click();
+        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
 
+        //Dogrulama
+        String result2 = driver.findElement(sonuc).getText();
+        expectedResult = -num1 * -num2;
+        String expectedStrg = String.valueOf(expectedResult);
+        assertEquals(expectedStrg, result2);
+        System.out.println("Gercek deger = " + result2
+                + "\nBeklenen deger = " + expectedStrg);
     }
-
-    By bolmeSonuc = AppiumBy.androidUIAutomator("new UiSelector().description(\"3 Hesaplama sonucu\")");
-    By bolmeSonuc1 = AppiumBy.androidUIAutomator("new UiSelector().text(\"−30\")");
-    By bolmeSonuc2 = AppiumBy.androidUIAutomator("new UiSelector().text(\"Sıfıra bölünemez.\")");
 
     @Test
     public void testBolme() {
+
         // İki pozitif sayıyı bölme
-        driver.findElement(dokuz).click();
+        randomSayi();
+        num1 = secim;
         driver.findElement(bolu).click();
-        driver.findElement(uc).click();
+        randomSayi();
+        num2 = secim;
         driver.findElement(esit).click();
-        System.out.println("bolmeSonuc = " + driver.findElement(bolmeSonuc).getText());
-        driver.findElement(sil).click();
+        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
+
+        //Dogrulama
+        String result = driver.findElement(sonuc).getText();
+        expectedResult = num1 / num2;
+        String expected = String.valueOf(expectedResult);
+        assertEquals(expected, result);
+        System.out.println("Gercek deger = " + result
+                + "\nBeklenen deger = " + expected);
 
         // Bir pozitif bir negatif sayıyı bölme
-        driver.findElement(alti).click();
-        driver.findElement(sifir).click();
+        randomSayi();
+        num1 = secim;
         driver.findElement(bolu).click();
-        driver.findElement(arti_eksi).click();
-        driver.findElement(iki).click();
+        driver.findElement(parantez).click();
+        driver.findElement(eksi).click();
+        randomSayi();
+        driver.findElement(parantez).click();
+        num2 = secim;
         driver.findElement(esit).click();
-        System.out.println("carpmaSonuc1 = " + driver.findElement(bolmeSonuc1).getText());
-        driver.findElement(sil).click();
+        System.out.println("sonuc = " + driver.findElement(sonuc).getText());
+
+        //Dogrulama
+        String result1 = driver.findElement(sonuc).getText();
+        expectedResult = num1 / -num2;
+        String expectedStr = String.valueOf(expectedResult);
+        assertEquals(expectedStr, result1);
+        System.out.println("Gercek deger = " + result1
+                + "\nBeklenen deger = " + expectedStr);
+
+
 
         // Bir sayıyı "0" a bölme
-        driver.findElement(dokuz).click();
+        randomSayi();
+        num1 = secim;
         driver.findElement(bolu).click();
         driver.findElement(sifir).click();
         driver.findElement(esit).click();
-        System.out.println("carpmaSonuc2 = " + driver.findElement(bolmeSonuc2).getText());
-        driver.findElement(sil).click();
+
+        WebElement sifiraBolunemez = driver.findElement(AppiumBy.id("com.google.android.calculator:id/result_preview"));
+        Assert.assertEquals( sifiraBolunemez.getText(),"0'a bölünemez");
 
 
     }
+
 
     public void randomSayi() {
         Random random = new Random();
