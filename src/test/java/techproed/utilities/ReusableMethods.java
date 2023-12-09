@@ -5,6 +5,8 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -51,7 +53,7 @@ public class ReusableMethods {
         ));
     }
 
-    public void longClickGestureElement(AndroidDriver driver, WebElement element) {
+    public void longClickGesture(AndroidDriver driver, WebElement element) {
 
               driver.executeScript("mobile: longClickGesture", ImmutableMap.of(
                 "elementId", ((RemoteWebElement) element).getId()
@@ -95,14 +97,34 @@ public class ReusableMethods {
         ));
     }
 
-    public void scrollGestureElement(AndroidDriver driver,WebElement element,String direction, double percent){
+    public void scrollGesture(AndroidDriver driver,WebElement element,String direction, double percent){
               driver.executeScript("mobile: scrollGesture", ImmutableMap.of(
                 "elementId", ((RemoteWebElement) element).getId(),
                 "direction", direction,
                 "percent", percent // sayfayı belirlediğimiz element boyutu kadar indirir (0.5 yarısı kadar indirir,2.0 iki katı kadar indirir)
         ));
     }
+    public void scrollGesture(AndroidDriver driver, WebElement element, String direction, double percent, int speed){
+        driver.executeScript("mobile: scrollGesture", ImmutableMap.of(
+                "elementId", ((RemoteWebElement) element).getId(),
+                "direction", direction,
+                "percent", percent,
+                "speed", speed
+        ));
+    }
 
+    public void swipeGesture(AndroidDriver driver, WebElement element, String direction, double percent, int speed){
+        driver.executeScript("mobile: swipeGesture", ImmutableMap.of(
+                "elementId", ((RemoteWebElement) element).getId(),
+                "direction", direction,
+                "percent", percent,
+                "speed", speed
+        ));
+    }
+    public static void visibleWait(AndroidDriver driver, WebElement element, int sayi) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(sayi));
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
 
 
 

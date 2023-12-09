@@ -1,0 +1,13 @@
+
+  Apk sı olmayan uygulamalar için, Cihazda uygulamayı açtıktan sonra
+     "cmd" de aşağıdaki kodlardan birini çalıştırarak setAppPackage() ve setAppActivity() yollarını al
+
+     adb shell dumpsys window | find "mCurrentFocus"
+     dumpsys activity activities | grep mResumedActivity
+     adb shell dumpsys window | grep -E "mCurrentFocus"j7y17lte:/ $ dumpsys window | grep -E "mCurrentFocus"
+
+    Test çalıştırdığımızda eğer "ChromeDriver bulunamadı" şeklinde bir hata mesajı alırsak, server'ı aşağıdaki
+          komut ile çalıştırıp, testi tekrar çalıştırırız. Böylece chromedriver bilgisayarımıza otomatik olarak yüklenir.
+          appium --allow-insecure chromedriver_autodownload
+
+     cmd'de "adb devicees" yazıp cihazın id'sini alabiliriz

@@ -20,7 +20,7 @@ public class C07_ClickGesture extends ApiDemosBaseTest {
                 "elementId", ((RemoteWebElement) os).getId()
         ));
 
-       // clickGesture(driver, os);
+        clickGesture(driver, os);
     }
 
     @Test

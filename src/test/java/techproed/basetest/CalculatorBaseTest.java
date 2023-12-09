@@ -6,7 +6,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import techproed.utilities.ReusableMethods;
 
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
@@ -32,8 +31,15 @@ public class CalculatorBaseTest extends ReusableMethods {
         driver = new AndroidDriver(url, options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
-    // adb shell dumpsys window | find "mCurrentFocus" komutu ile hesap makinesini aç  com.android.calculator2/com.android.calculator2.Calculator
-    //adb shell dumpsys window | grep -E "mCurrentFocus"j7y17lte:/ $ dumpsys window | grep -E "mCurrentFocus"
+
+    // Apk sı olmayan uygulamalar için, Cihazda uygulamayı açtıktan sonra
+    // "cmd" de aşağıdaki kodlardan birini çalıştırarak setAppPackage() ve setAppActivity() yollarını al
+
+    // adb shell dumpsys window | find "mCurrentFocus"
+    // dumpsys activity activities | grep mResumedActivity
+    // adb shell dumpsys window | grep -E "mCurrentFocus"j7y17lte:/ $ dumpsys window | grep -E "mCurrentFocus"
+
+
     @AfterClass
     public void afterClass() {
         driver.quit();

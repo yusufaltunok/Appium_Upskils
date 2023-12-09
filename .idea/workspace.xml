@@ -4,29 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d09c1011-6729-491d-9314-c548f1c8912d" name="Changes" comment="30/11/2023">
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/VodQABaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day06/C07_ClickGesture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day06/C08_DoubleClickGesture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day06/C09_longClickGesture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day06/C10_DragGesture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day07/C11_ScrollGesture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day07/C12_SwipeGesture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day07/C13_FlingGesture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day07/C14_PinchOpenAndCloseGestures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/homework/MyDemoApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/utilities/ReusableMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Calculator.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/VodQA.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="d09c1011-6729-491d-9314-c548f1c8912d" name="Changes" comment="09/12/2023">
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/Komutlar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/ChromeBrowserBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/DeviceBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/HaritalarBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/KitapyurduBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/TelefonBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day08practice/P05_Telefon_LongClickGesture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day08practice/P06_KitapYurdu_ScrollSwipeGestures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day09/C15_PointerInput_Tap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day09/C16_PointerInput_DoubleTap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day09/C17_PointerInput_LongPress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day10/C18_PointerInput_Swipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day10/C19_PointerInput_Fling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day10/C20_PointerInput_DragAndDrop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day10/C21_PointerInput_ZoomIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day10/C22_PointerInput_ZoomOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day11/C23_UygulamaEtkilesimleri.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day11/C24_EkranKilidi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day11/C25_Klavye.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day12/C26_HibritUygulamaTesti.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day12/C27_MobilWebUygulamaTesti.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day13practice/P08_HibritUygulama_GeneralStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/day13practice/P09_MobilWebUygulama_KitapYurdu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproed/homework/Haritalar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/techproed/basetest/Android_MyDemoAppBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/MyDemoAppBaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/techproed/basetest/ApiDemosBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/ApiDemosBaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/techproed/basetest/CalculatorBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/CalculatorBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/techproed/basetest/GeneralStoreBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/techproed/basetest/GeneralStoreBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/techproed/day05practice/P03_GeneralStore_NegativeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/techproed/day05practice/P03_GeneralStore_NegativeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/techproed/day05practice/P04_MyDemoApp_ColorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/techproed/day05practice/P04_MyDemoApp_ColorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/techproed/homework/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/techproed/homework/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/techproed/day06/C07_ClickGesture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/techproed/day06/C07_ClickGesture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/techproed/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/techproed/utilities/ReusableMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,24 +76,29 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\EXCALIBUR\Desktop\Appium_Upskils\src\test\java\techproed\day12" />
+      <recent name="C:\Users\EXCALIBUR\Desktop\Appium_Upskils\src\test\java\techproed\basetest" />
+      <recent name="C:\Users\EXCALIBUR\Desktop\Appium_Upskils\src\test\java\techproed\day11" />
       <recent name="C:\Users\EXCALIBUR\Desktop\Appium_Upskils\src\test\java\techproed\utilities" />
       <recent name="C:\Users\EXCALIBUR\Desktop\Appium_Upskils\src\test\resources" />
-      <recent name="C:\Users\EXCALIBUR\Desktop\Appium_Upskils\src\test\java\techproed\day07" />
-      <recent name="C:\Users\EXCALIBUR\Desktop\Appium_Upskils\src\test\java\techproed\basetest" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="techproed.day10" />
+      <recent name="techproed.basetest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C14_PinchOpenAndCloseGestures.testPinchOpenAndCloseGesturesElement">
-    <configuration name="C12_SwipeGesture.testSwipeGestureCoordinate" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.P09_MobilWebUygulama_KitapYurdu.testRegister">
+    <configuration name="C02_Capabilities.testUiAutomator2Options" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Appium_Upskils" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="techproed.day07.*" />
+          <option name="PATTERN" value="techproed.day02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="techproed.day07" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day07.C12_SwipeGesture" />
-      <option name="METHOD_NAME" value="testSwipeGestureCoordinate" />
+      <option name="PACKAGE_NAME" value="techproed.day02" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day02.C02_Capabilities" />
+      <option name="METHOD_NAME" value="testUiAutomator2Options" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -94,17 +106,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C13_FlingGesture.testFlingGestureCoordinate" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C23_UygulamaEtkilesimleri.testTerminateApp" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Appium_Upskils" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="techproed.day07.*" />
+          <option name="PATTERN" value="techproed.day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="techproed.day07" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day07.C13_FlingGesture" />
-      <option name="METHOD_NAME" value="testFlingGestureCoordinate" />
+      <option name="PACKAGE_NAME" value="techproed.day11" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day11.C23_UygulamaEtkilesimleri" />
+      <option name="METHOD_NAME" value="testTerminateApp" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -112,17 +124,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C13_FlingGesture.testFlingGestureElement" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C26_HibritUygulamaTesti.testHibrit" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Appium_Upskils" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="techproed.day07.*" />
+          <option name="PATTERN" value="techproed.day12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="techproed.day07" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day07.C13_FlingGesture" />
-      <option name="METHOD_NAME" value="testFlingGestureElement" />
+      <option name="PACKAGE_NAME" value="techproed.day12" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day12.C26_HibritUygulamaTesti" />
+      <option name="METHOD_NAME" value="testHibrit" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -130,17 +142,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C14_PinchOpenAndCloseGestures.testPinchOpenAndCloseGesturesCoordinate" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="P08_HibritUygulama_GeneralStore.testGeneralStore" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Appium_Upskils" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="techproed.day07.*" />
+          <option name="PATTERN" value="techproed.day13practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="techproed.day07" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day07.C14_PinchOpenAndCloseGestures" />
-      <option name="METHOD_NAME" value="testPinchOpenAndCloseGesturesCoordinate" />
+      <option name="PACKAGE_NAME" value="techproed.day13practice" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day13practice.P08_HibritUygulama_GeneralStore" />
+      <option name="METHOD_NAME" value="testGeneralStore" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,17 +160,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C14_PinchOpenAndCloseGestures.testPinchOpenAndCloseGesturesElement" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="P09_MobilWebUygulama_KitapYurdu.testRegister" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Appium_Upskils" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="techproed.day07.*" />
+          <option name="PATTERN" value="techproed.day13practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="techproed.day07" />
-      <option name="MAIN_CLASS_NAME" value="techproed.day07.C14_PinchOpenAndCloseGestures" />
-      <option name="METHOD_NAME" value="testPinchOpenAndCloseGesturesElement" />
+      <option name="PACKAGE_NAME" value="techproed.day13practice" />
+      <option name="MAIN_CLASS_NAME" value="techproed.day13practice.P09_MobilWebUygulama_KitapYurdu" />
+      <option name="METHOD_NAME" value="testRegister" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -168,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C14_PinchOpenAndCloseGestures.testPinchOpenAndCloseGesturesElement" />
-        <item itemvalue="TestNG.C14_PinchOpenAndCloseGestures.testPinchOpenAndCloseGesturesCoordinate" />
-        <item itemvalue="TestNG.C13_FlingGesture.testFlingGestureCoordinate" />
-        <item itemvalue="TestNG.C13_FlingGesture.testFlingGestureElement" />
-        <item itemvalue="TestNG.C12_SwipeGesture.testSwipeGestureCoordinate" />
+        <item itemvalue="TestNG.P09_MobilWebUygulama_KitapYurdu.testRegister" />
+        <item itemvalue="TestNG.P08_HibritUygulama_GeneralStore.testGeneralStore" />
+        <item itemvalue="TestNG.C26_HibritUygulamaTesti.testHibrit" />
+        <item itemvalue="TestNG.C02_Capabilities.testUiAutomator2Options" />
+        <item itemvalue="TestNG.C23_UygulamaEtkilesimleri.testTerminateApp" />
       </list>
     </recent_temporary>
   </component>
@@ -199,12 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701376335900</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="04/12/2023">
+      <created>1701699275624</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701699275625</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="25/11/2023" />
     <MESSAGE value="30/11/2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="30/11/2023" />
+    <MESSAGE value="04/12/2023" />
+    <MESSAGE value="09/12/2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="09/12/2023" />
   </component>
 </project>
